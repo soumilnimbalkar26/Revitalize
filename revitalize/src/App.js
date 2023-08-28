@@ -7,10 +7,9 @@ import Screen2 from "./screens/Screen2";
 function App() {
   return (
     <>
-      <Navbar>
-        <Screen1 />
-      </Navbar>
-      <Screen2 />
+      <Navbar />
+      <Screen1 />
+      {/* <Screen2 /> */}
     </>
   );
 }

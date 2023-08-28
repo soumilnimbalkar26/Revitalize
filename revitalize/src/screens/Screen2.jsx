@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "../images/Screen2img.png";
+// import Img from "../images/Screen2img.png";
 
 const Screen2 = () => {
   return (
@@ -21,7 +21,7 @@ const Screen2 = () => {
 
         <div className="flex justify-center mt-20">
           <div className="bg-yellow-500 h-98 w-1134 rounded-6xl">
-            <img src={Img} alt="img" />
+            <img src="" alt="img" />
           </div>
         </div>
       </div>

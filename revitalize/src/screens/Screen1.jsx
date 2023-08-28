@@ -3,17 +3,13 @@ import React from "react";
 const Screen1 = () => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center my-96">
-        <div>
-          <h1 className="text-white font-bold text-5xl tracking-widest text-center">
-            Best Hair Salon For
-          </h1>
-          <h1 className="text-white font-bold text-5xl tracking-widest text-center">
-            Professional Look
+      <div className="flex flex-col items-center justify-center h-screen space-y-20">
+        <div className="w-2/4 text-center">
+          <h1 className="text-white font-bold text-5xl tracking-widest">
+            Best Hair Salon For Professional Look
           </h1>
         </div>
-
-        <div className="flex space-x-8 pt-20">
+        <div className="flex justify-center space-x-8">
           <button className="text-black font-bold text-base bg-yellow-500 px-14 py-4 rounded-2xl hover:bg-yellow-400 duration-300">
             Book Now
           </button>

@@ -1,33 +1,21 @@
 import React from "react";
 import Logo from "../images/RevitalizeLogo.png";
-import BG from "../images/img1.jpg";
+// import BG from "../images/img1.jpg";
 
-const Navbar = ({ children }) => {
+const Navbar = () => {
   return (
     <>
-      <div
-        className="Navbar p-1"
-        style={{
-          backgroundImage: `url(${BG})`,
-          backgroundSize: "cover",
-          height: "100vh",
-        }}
-      >
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between mt-4 mx-10">
-          <div className="flex items-center mb-4 md:mb-0">
-            <img src={Logo} alt="Logo" />
-          </div>
+      <div className="z-50 fixed top-0 right-0 left-0">
+        <div className="flex items-center justify-between md:flex-row h-60 p-10">
+          <img src={Logo} alt="Logo" />
 
-          <div className="flex-grow flex justify-end">
-            <ul className="text-white font-bold flex items-center">
-              <li className="ml-56">Home</li>
-              <li className="ml-56">About us</li>
-              <li className="ml-56">Contact</li>
-              <li className="ml-56">Services</li>
-            </ul>
-          </div>
+          <ul className="text-white font-bold flex justify-around w-100 ">
+            <li>Home</li>
+            <li>About us</li>
+            <li>Contact</li>
+            <li>Services</li>
+          </ul>
         </div>
-        {children}
       </div>
     </>
   );
