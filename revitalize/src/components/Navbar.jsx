@@ -1,22 +1,33 @@
 import React from "react";
 import Logo from "../images/RevitalizeLogo.png";
-// import BG from "../images/img1.jpg";
 
 const Navbar = () => {
   return (
     <>
-      <div className="z-50 fixed top-0 right-0 left-0">
-        <div className="flex items-center justify-between md:flex-row h-60 p-10">
-          <img src={Logo} alt="Logo" />
+      <nav className="flex items-center justify-between w-full h-40 px-10 absolute">
+        <div>
+          <a href="#">
+            <img src={Logo} alt="Logo" />
+          </a>
+        </div>
 
-          <ul className="text-white font-bold flex justify-around w-100 ">
-            <li>Home</li>
-            <li>About us</li>
-            <li>Contact</li>
-            <li>Services</li>
+        <div>
+          <ul className="text-white font-bold flex justify-around gap-10">
+            <a href="#">
+              <li>Home</li>
+            </a>
+            <a href="#">
+              <li>About us</li>
+            </a>
+            <a href="#">
+              <li>Contact</li>
+            </a>
+            <a href="#">
+              <li>Services</li>
+            </a>
           </ul>
         </div>
-      </div>
+      </nav>
     </>
   );
 };
